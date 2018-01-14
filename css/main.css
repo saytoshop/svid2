@@ -1,0 +1,95 @@
+HTML {
+    /*   background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-image: url( '../img/pp.png' );*/
+    max-width: 1920px;
+    margin: auto;
+    overflow-x: hidden;
+    font-family: "Century Gothic";
+    font-size: 10px;
+    color: #000000;
+    font-weight: 400;
+    box-sizing: border-box;
+}
+
+.hidden {
+    display: none!important;
+}
+
+body {}
+
+header {
+    padding: 16px 0;
+}
+
+.topmenu {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1024px;
+    margin: auto;
+    font-size: 15px;
+}
+
+.topmenu_elements {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.menu_element a {
+    text-decoration: none;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.topSlider {
+    position: relative;
+}
+
+.slide__textBlock {
+    position: absolute;
+    top: 120px;
+    right: 15rem;
+    color: #fff;
+    width: 45rem;
+}
+
+.slide__caption {
+    font-family: "Akrobat - Black";
+    font-size: 11rem;
+}
+
+.slide__description {
+    font-size: 3rem;
+}
+
+.button {
+    color: #e6e6e6;
+    font-family: "Akrobat - Black";
+    font-size: 3rem;
+    padding: 1rem 4rem;
+    border: 2px solid #fff;
+    text-decoration: none;
+}
+.slide__button{
+  position: absolute;
+  bottom: 2.6rem;
+  right: 26.5rem;
+}
+
+@media screen and (max-width:1024px) {
+    .content {
+        padding: 0 20px;
+    }
+    .elementText {
+        bottom: 25px;
+        left: 20px;
+    }
+    .elementCaption {
+        font-size: 53px;
+    }
+    .elementDescription {
+        font-size: 26px;
+    }
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <META NAME="ROBOTS" CONTENT="NOINDEX">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <!--    <meta name="viewport" content="width=device-width, initial-scale=1" />-->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="css/fonts.css" rel="stylesheet">
+    <title></title>
+    <meta name="description" content="">
+    <script type="text/javascript">
+        function loadFont(a, b, c, d) {
+            function e() {
+                if (!window.FontFace) return !1;
+                var a = new FontFace("t", 'url("data:application/font-woff2,") format("woff2")', {}),
+                    b = a.load();
+                try {
+                    b.then(null, function() {})
+                } catch (c) {}
+                return "loading" === a.status
+            }
+            var f = navigator.userAgent,
+                g = !window.addEventListener || f.match(/(Android (2|3|4.0|4.1|4.2|4.3))|(Opera (Mini|Mobi))/) && !f.match(/Chrome/);
+            if (!g) {
+                var h = {};
+                try {
+                    h = localStorage || {}
+                } catch (i) {}
+                var j = "x-font-" + a,
+                    k = j + "url",
+                    l = j + "css",
+                    m = h[k],
+                    n = h[l],
+                    o = document.createElement("style");
+                if (o.rel = "stylesheet", document.head.appendChild(o), !n || m !== b && m !== c) {
+                    var p = c && e() ? c : b,
+                        q = new XMLHttpRequest;
+                    q.open("GET", p), q.onload = function() {
+                        q.status >= 200 && q.status < 400 && (h[k] = p, h[l] = q.responseText, d || (o.textContent = q.responseText))
+                    }, q.send()
+                } else o.textContent = n
+            }
+        }
+        loadFont('font', 'css/fonts.css');
+    </script>
+
+</head>
+
+<body>
+    <header class="onBack">
+        <div class="topmenu content">
+            <div class="brand" onclick="window.scrollTo(0,0);window.location.hash = ''">
+                <img src="img/logo.png" alt="">
+            </div>
+            <div class="topmenu_elements">
+                <div class="menu_closer"><img class="close_menu" src="img/cross.png" alt=""></div>
+                <div class="menu_element"><a href="" class="">Главная</a></div>
+                <div class="menu_element"><a href="" class="">О нас</a></div>
+                <div class="menu_element"><a href="">Каталог</a></div>
+                <div class="menu_element"><a href="" class="">Прайс</a></div>
+                <div class="menu_element"><a href="">Доставка</a></div>
+                <div class="menu_element"><a href="">Строительство</a></div>
+                <div class="menu_element"><a href="">Контакты</a></div>
+            </div>
+        </div>
+    </header>
+    <section class="topSlider">
+      <div class="slide">
+        <img src="img/slide1.jpg" alt="" class="slide__image">
+        <div class="slide__textBlock">
+          <div class="slide__caption">Качество</div>
+          <div class="slide__description">Детские площадки “СвидЪ” - превзойдут ваши ожидания!</div>
+        </div>
+        <a href="" class="slide__button button">узнать больше</a>
+      </div>
+    </section>
+</body>
+<script src="js/jquery-1.12.4.min.js" charset="utf-8"></script>
+<script src="js/main.js" charset="utf-8"></script>
+
+</html>
