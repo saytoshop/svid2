@@ -79,7 +79,7 @@ header {
   margin-left: 5px;
 }
 .second__element:nth-child(2) .second__textBlock {
-left: 7rem;  
+left: 7rem;
 }
 .second__textBlock {
     position: absolute;
@@ -116,6 +116,60 @@ left: 7rem;
   bottom: 2.6rem;
   right: 26.5rem;
 }
+.textBlock{
+  font-size: 3.6rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 12rem 8rem 15rem 8rem;
+      align-items: center;
+}
+.textBlock__left{
+  width: 60%;
+  padding-right: 7rem;
+text-align: right;
+}
+.textBlock__title{
+  font-family: "Akrobat - Extra Bold";
+font-size: 10rem;
+}
+.textBlock__right{
+  width: 40%;
+font-size: 3.2rem;
+}
+.scalable{
+  overflow: hidden;
+}
+.scalable img:hover {
+transform: scale(1.1);
+transition: 1s;
+}
+
+.imagesBlock{
+
+}
+.imagesBlock__firstRow{
+  display: flex;
+  justify-content: space-between;
+
+}
+.imagesBlock__main{
+  width: 75%;
+  margin: 5px 10px 5px 0;
+}
+.imagesBlock__element{
+  margin: 5px;
+}
+.imagesBlock__element:nth-child(1){
+  margin-left: 0;
+}
+.imagesBlock__element:nth-child(3){
+  margin-right: 0;
+}
+.imagesBlock__element_25{
+  width: 25%;
+  margin: 5px 0;
+}
+
 
 @media screen and (max-width:1024px) {
     .content {
