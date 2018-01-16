@@ -32,15 +32,15 @@ function loadFont(a, b, c, d) {
 }
 loadFont('font', 'css/fonts.css');
 $(function(f) {
-/*
+
   $(".subMenuMarker").mouseleave(function() {
     var e = $("#subMenu");
+$(".submenuWrapper").height(0);
 
-    e.removeClass("active");
   });
   $(".subMenuMarker").mouseover(function() {
     var e = $("#subMenu");
-    e.addClass("active");
 
-  });*/
+$(".submenuWrapper").height(e.outerHeight());
+  });
 });

@@ -19,50 +19,56 @@
 <body>
   <header class="onBack">
     <div class="topmenu content">
-      <div class="brand" onclick="window.scrollTo(0,0);window.location.hash = ''">
+      <a href="" class="brand" onclick="window.scrollTo(0,0);window.location.hash = ''">
         <img src="img/logo.png" alt="">
-      </div>
+      </a>
       <div class="topmenu_elements">
         <div class="menu_closer"><img class="close_menu" src="img/cross.png" alt=""></div>
         <div class="menu_element"><a href="" class="">Главная</a></div>
         <div class="menu_element"><a href="" class="">О нас</a></div>
         <div class="menu_element withSubMenu subMenuMarker"><a href="">Каталог</a>
-          <div class="subMenu subMenuMarker" id="subMenu">
-            <a href="" class="subMenu__element scalable">
+          <div class="submenuWrapper">
+            <div class="subMenu subMenuMarker" id="subMenu">
+              <a href="" class="subMenu__element scalable">
         <img src="img/sm1.png" alt="" class="subMenu__image">
         <div class="subMenu__title">Корабли</div>
         </a>
-            <a href="" class="subMenu__element scalable">
+              <a href="" class="subMenu__element scalable">
         <img src="img/sm2.png" alt="" class="subMenu__image">
         <div class="subMenu__title">Крепости</div>
         </a>
-            <a href="" class="subMenu__element">
+              <a href="" class="subMenu__element">
         <img src="img/sm1.png" alt="" class="subMenu__image">
         <div class="subMenu__title">Корабли</div>
         </a>
-            <a href="" class="subMenu__element">
+              <a href="" class="subMenu__element">
         <img src="img/sm2.png" alt="" class="subMenu__image">
         <div class="subMenu__title">Крепости</div>
         </a>
-            <a href="" class="subMenu__element">
+              <a href="" class="subMenu__element">
         <img src="img/sm1.png" alt="" class="subMenu__image">
         <div class="subMenu__title">Корабли</div>
         </a>
-            <a href="" class="subMenu__element">
+              <a href="" class="subMenu__element">
         <img src="img/sm2.png" alt="" class="subMenu__image">
         <div class="subMenu__title">Крепости</div>
         </a>
-            <a href="" class="subMenu__element">
+              <a href="" class="subMenu__element">
         <img src="img/sm1.png" alt="" class="subMenu__image">
         <div class="subMenu__title">Корабли</div>
         </a>
 
+            </div>
           </div>
         </div>
         <div class="menu_element"><a href="" class="">Прайс</a></div>
         <div class="menu_element"><a href="">Доставка</a></div>
         <div class="menu_element"><a href="">Строительство</a></div>
         <div class="menu_element"><a href="">Контакты</a></div>
+        <form class="menu_element search" action="/search.html" method="GET">
+						<input class="search__input" type="text" name="query" placeholder="">
+						<input class="search__button" type="submit" value="Поиск">
+					</form>
       </div>
     </div>
   </header>
@@ -183,9 +189,38 @@
                               <div class="imagesBlock__caption"></div>
                               <div class="imagesBlock__description"></div>
                           </div>
-                      </a>
+                                              </a>
     </div>
   </section>
+  <footer>
+    <div class="footer">
+      <div class="footer__leftCol">
+        <div class="footerNav">
+          <a href="" class="navFooter__element">Главная</a>
+          <a href="" class="navFooter__element">О нас</a>
+          <a href="" class="navFooter__element">Каталог</a>
+          <a href="" class="navFooter__element">Прайс</a>
+          <a href="" class="navFooter__element">Доставка</a>
+          <a href="" class="navFooter__element">Строительство</a>
+          <a href="" class="navFooter__element">Контакты</a>
+        </div>
+        <div class="icons">
+          <img src="img/instagram-icon.png" alt="" class="icons__icon">
+          <img src="img/pinterest-icon.png" alt="" class="icons__icon">
+        </div>
+      </div>
+      <div class="footer__centerCol">
+        <div class="copyright">© 2017 Детские площадки Свидъ</div>
+        <div class="icons">
+          <img src="img/card-icon.png" alt="" class="icons__icon">
+        </div>
+      </div>
+      <div class="footer__rightCol">
+        <div class="footer__address">Москва, ул. Большая Новодмитровская, д. <br>36, корп. 2 </div>
+        <div class="footer__tel">Т: +7 (495) 410-81-02</div>
+      </div>
+    </div>
+  </footer>
 </body>
 <script src="js/jquery-1.12.4.min.js" charset="utf-8"></script>
 <script src="js/main.js" charset="utf-8"></script>
