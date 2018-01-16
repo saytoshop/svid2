@@ -30,17 +30,23 @@ function loadFont(a, b, c, d) {
     } else o.textContent = n
   }
 }
-loadFont('font', 'css/fonts.css');
+loadFont('font', '/css/fonts.css');
 $(function(f) {
 
   $(".subMenuMarker").mouseleave(function() {
-    var e = $("#subMenu");
-$(".submenuWrapper").height(0);
-
+    $(".submenuWrapper").height(0);
   });
+
   $(".subMenuMarker").mouseover(function() {
     var e = $("#subMenu");
-
-$(".submenuWrapper").height(e.outerHeight());
+    $(".submenuWrapper").height(e.outerHeight());
   });
+
+  $(".owl-carousel").owlCarousel({
+    items: 1,
+    loop: true,
+    autoplay: true,
+    autoplayTimeout: 6000
+  });
+
 });
