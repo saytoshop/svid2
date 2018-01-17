@@ -17,7 +17,9 @@ HTML {
 .hidden {
   display: none !important;
 }
-
+img{
+  display: block;
+}
 body {}
 
 header {
@@ -214,6 +216,9 @@ header {
   -ms-flex-pack: justify;
   justify-content: space-between;
 }
+.second img{
+  width: 100%;
+}
 
 .second__element {
   position: relative;
@@ -303,13 +308,17 @@ header {
   overflow: hidden;
 }
 
-.scalable img:hover {
+.scalable img {
+  -webkit-transition: 5s;
+  -o-transition: 5s;
+  transition: 5s;
+}
+
+
+.scalable:hover img {
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
-  -webkit-transition: 1s;
-  -o-transition: 1s;
-  transition: 1s;
 }
 
 .imagesBlock {}
@@ -430,6 +439,10 @@ footer {
 .footer__leftCol .icons {
   text-align: right;
 }
+.icons__icon {
+    display: inline-block;
+}
+
 
 .footer__centerCol {
   padding: 1.5rem 3rem;

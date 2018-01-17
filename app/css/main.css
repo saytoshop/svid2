@@ -16,7 +16,9 @@ HTML {
 .hidden {
   display: none !important;
 }
-
+img{
+  display: block;
+}
 body {}
 
 header {
@@ -182,6 +184,9 @@ header {
   display: flex;
   justify-content: space-between;
 }
+.second img{
+  width: 100%;
+}
 
 .second__element {
   position: relative;
@@ -265,9 +270,13 @@ header {
   overflow: hidden;
 }
 
-.scalable img:hover {
+.scalable img {
+  transition: 5s;
+}
+
+
+.scalable:hover img {
   transform: scale(1.1);
-  transition: 1s;
 }
 
 .imagesBlock {}
@@ -372,6 +381,10 @@ footer {
 .footer__leftCol .icons {
   text-align: right;
 }
+.icons__icon {
+    display: inline-block;
+}
+
 
 .footer__centerCol {
   padding: 1.5rem 3rem;
